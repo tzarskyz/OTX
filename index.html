@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>otx by x43x61x69</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>otx</h1>
+        <p>Mach-O disassembler, fixed to work with new otool shipped with Xocde 4.2+.</p>
+
+        <p class="view"><a href="https://github.com/x43x61x69/otx">View the Project on GitHub <small>x43x61x69/otx</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/x43x61x69/otx/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/x43x61x69/otx/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/x43x61x69/otx">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="what-is-otx" class="anchor" href="#what-is-otx"><span class="octicon octicon-link"></span></a>What is otx?</h1>
+
+<p>A Mach-O disassembler.</p>
+
+<p><a href="https://github.com/x43x61x69/otx">https://github.com/x43x61x69/otx</a></p>
+
+<hr><h2>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Apple made changes to the otool after Xcode 4.2, breaking the otx output format. This repo was mean to fix it, also removed PowerPC arch so it will compile in Xocde 4.</p>
+
+<p>Build number was fixed as well. (288 -&gt; 561) A pre-compiled binary was also inclouded.</p>
+
+<hr><h2>
+<a name="os-x-mavericks--xcode-5" class="anchor" href="#os-x-mavericks--xcode-5"><span class="octicon octicon-link"></span></a>OS X Mavericks &amp; Xcode 5</h2>
+
+<p>In terminal, use the following command:</p>
+
+<div class="highlight highlight-sh"><pre>sudo ln -s /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/otool /Applications/Xcode.app/Contents/Developer/usr/bin/otool
+</pre></div>
+
+<p>This will fix the error in 10.9 with Xcode 5.0.1.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/x43x61x69">x43x61x69</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42914197-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
