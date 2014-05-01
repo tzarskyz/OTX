@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>otx by x43x61x69</title>
+    <title>OTX by x43x61x69</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,42 +15,65 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>otx</h1>
-        <p>Mach-O disassembler, fixed to work with new otool shipped with Xocde 4.2+.</p>
+        <h1>OTX</h1>
+        <p>The Mach-O disassembler.</p>
 
-        <p class="view"><a href="https://github.com/x43x61x69/otx">View the Project on GitHub <small>x43x61x69/otx</small></a></p>
+        <p class="view"><a href="https://github.com/x43x61x69/OTX">View the Project on GitHub <small>x43x61x69/OTX</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/x43x61x69/otx/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/x43x61x69/otx/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/x43x61x69/otx">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/x43x61x69/OTX/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/x43x61x69/OTX/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/x43x61x69/OTX">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <h1>
-<a name="what-is-otx" class="anchor" href="#what-is-otx"><span class="octicon octicon-link"></span></a>What is otx?</h1>
+        <p><img src="https://dl.dropboxusercontent.com/s/tjixljauua7dx7i/otx.png" alt="screenshot"></p>
 
-<p>A Mach-O disassembler.</p>
-
-<p><a href="https://github.com/x43x61x69/otx">https://github.com/x43x61x69/otx</a></p>
+<p><del><a href="http://otx.osxninja.com/">Original Site</a></del> <em>(Down)</em></p>
 
 <hr><h2>
 <a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
 
-<p>Apple made changes to the otool after Xcode 4.2, breaking the otx output format. This repo was mean to fix it, also removed PowerPC arch so it will compile in Xocde 4.</p>
+<p>This is an updated version of the original otx, which has the 
+following new features:</p>
 
-<p>Build number was fixed as well. (288 -&gt; 561) A pre-compiled binary was also inclouded.</p>
+<ul>
+<li>Works with new otool came with Xcode 4.2 and above.</li>
+<li>Compatible with Xcode 5.1.</li>
+<li>Based on 10.9 SDK.</li>
+<li>Now use 64bit only binaries.</li>
+<li>Outdated APIs updated.</li>
+<li>Minor bugs fix.</li>
+<li>Pre-compiled binaries included.</li>
+</ul><p>If the GUI version crashed on certain targets, consider using the 
+CLI version. Usually it works without problems.</p>
 
 <hr><h2>
-<a name="os-x-mavericks--xcode-5" class="anchor" href="#os-x-mavericks--xcode-5"><span class="octicon octicon-link"></span></a>OS X Mavericks &amp; Xcode 5</h2>
+<a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h2>
 
-<p>In terminal, use the following command:</p>
+<p>Build 562:</p>
+
+<ul>
+<li>Update base SDK to 10.9 and Xcode 5.1.</li>
+</ul><p>Build 561:</p>
+
+<ul>
+<li>Initial release.</li>
+</ul><hr><h2>
+<a name="issues-with-os-x-mavericks--xcode-5" class="anchor" href="#issues-with-os-x-mavericks--xcode-5"><span class="octicon octicon-link"></span></a>Issues with OS X Mavericks &amp; Xcode 5</h2>
+
+<p>If otx crashed when calling otool on your OS X Mavericks with Xcode 5 setup, use the following command:</p>
 
 <div class="highlight highlight-sh"><pre>sudo ln -s /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/otool /Applications/Xcode.app/Contents/Developer/usr/bin/otool
 </pre></div>
 
-<p>This will fix the error in 10.9 with Xcode 5.0.1.</p>
+<p>You will have to run this every time Xcode updates.</p>
+
+<hr><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The otx project and all original otx source files are in the public domain.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/x43x61x69">x43x61x69</a></p>
